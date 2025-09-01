@@ -2,6 +2,9 @@
 
 Convert Excel class schedules to Apple/Google calendar format (.ics)
 
+由于目前WeMust仅支持导出一周课表的xlsx文件，因此本项目支持将多个xlsx文件整合为一个.ics文件。
+该项目仅适用于iPhone与macOS用户，在macOS的Calender中导入.ics文件后，即可在iCloud中同步课表。
+
 ## How to Use
 
 ### Mac Users
