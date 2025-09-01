@@ -1,8 +1,9 @@
 import pandas as pd
 from datetime import datetime
 from icalendar import Calendar, Event
+import os
 
-file_path = '學生課表20250901104200.xlsx'  # 修改为你的文件路径
+file_path = '/Users/fengxiao/Downloads/學生課表20250901134747.xlsx'  # 修改为你的文件路径
 df = pd.read_excel(file_path)
 
 cal = Calendar()
@@ -24,5 +25,10 @@ for index, row in df.iterrows():
 
     cal.add_component(event)
 
-with open('class_schedule.ics', 'wb') as f:
+# 保存为 .ics 文件到 Downloads 目录
+downloads_path = os.path.expanduser('~/Downloads')
+ics_file_path = os.path.join(downloads_path, 'class_schedule.ics')
+with open(ics_file_path, 'wb') as f:
     f.write(cal.to_ical())
+
+print(f"ICS 文件已保存到: {ics_file_path}")
