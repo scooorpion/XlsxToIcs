@@ -4,23 +4,16 @@ Convert Excel class schedules to Apple/Google calendar format (.ics)
 
 ## How to Use
 
-### For Mac Users
+### Mac Users
 1. Open Terminal
 2. Navigate to the project folder: `cd /path/to/XlsxToIcs/ics`
-3. Run: `python gui.py`
-4. Click "Select Excel Files" to choose your files
-5. Enable deduplication if needed
-6. Click "Convert to ICS"
-7. Your .ics file will be saved automatically
+3. Install required packages: `pip install -r requirements.txt`
+4. Run: `python gui.py`
+5. Click "Select Excel Files" to choose your files
+6. Enable deduplication if needed
+7. Click "Convert to ICS"
+8. Your .ics file will be saved automatically
 
-### For Windows Users
-1. Open Command Prompt or PowerShell
-2. Navigate to the project folder: `cd C:\path\to\XlsxToIcs\ics`
-3. Run: `python gui.py`
-4. Click "Select Excel Files" to choose your files
-5. Enable deduplication if needed
-6. Click "Convert to ICS"
-7. Your .ics file will be saved automatically
 
 
 ## Command Line Version (main.py)
